@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #fff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .products, .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .product, .category {
+            height: 150px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+            flex-direction: column;
+            position: relative;
+        }
+        .product-name {
+            position: absolute;
+            bottom: -25px;
+            font-size: 14px;
+            color: #333;
+        }
+        .membership button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+        }
+        img {
+            width: 290px;
+            height: 170px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="bestsellers">
+        <h2>SOULFUL BESTSELLERS</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741358933_1028222.jpg?format=webp&w=360&dpr=1.0" alt="">
+                <div class="box"></div>
+                <div class="product-name">Product 1</div>
+            </div>
+            <div class="product">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1739512994_5204844.jpg?format=webp&w=360&dpr=1.0" alt="">
+                <div class="box"></div>
+                <div class="product-name">Product 2</div>
+            </div>
+            <div class="product">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741345234_2786880.jpg?format=webp&w=360&dpr=1.0" alt="">
+                <div class="box"></div>
+                <div class="product-name">Product 3</div>
+            </div>
+            <div class="product">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741341196_7154477.jpg?format=webp&w=360&dpr=1.0" alt="">
+                <div class="box"></div>
+                <div class="product-name">Product 4</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="categories">
+        <h2>CATEGORIES</h2>
+        <div class="category-grid">
+            <div class="category"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Tops_copy_kSUeUkf.jpg?format=webp&w=480&dpr=1.0" alt=""></div>
+            <div class="category"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Tshirts_copy_2_CxFs6tQ.jpg?format=webp&w=480&dpr=1.0" alt=""></div>
+            <div class="category"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Bottomwear_copy_QURrxic.jpg?format=webp&w=480&dpr=1.0" alt=""></div>
+            <div class="category"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Tops_copy_kSUeUkf.jpg?format=webp&w=480&dpr=1.0" alt=""></div>
+            <div class="category"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Tops_copy_kSUeUkf.jpg?format=webp&w=480&dpr=1.0" alt=""></div>
+            <div class="category"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Bottomwear_copy_QURrxic.jpg?format=webp&w=480&dpr=1.0" alt=""></div>
+        </div>
+    </section>
+    <div><img style="width: 100%; height: 300px;" src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage_banner_1.jpg?format=webp&w=1366&dpr=1.0" alt=""></div>
+    <section class="membership">
+        <h2>MEMBERSHIP PERKS</h2>
+        <p>Exclusive discounts, early access, and more.</p>
+        <button>Click to Know More</button>
+    </section>
+    
+    <footer>
+        <p>Homegrown Indian Brand</p>
+    </footer>
+</body>
+</html>
