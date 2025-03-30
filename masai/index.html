@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe sharing app</h1>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">add Recipe</a>
+            <a href="#">view Recipe</a>
+        </nav>
+    </header>
+
+    <section id="add-recipe">
+        <h2>Add a recipe</h2>
+        <form id="recipe-form">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text"  id="recipe-name" required>
+
+            <label for="recipe-ingredients">Ingredients</label>
+            <textarea id="recipe-ingredients" required></textarea>
+
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+
+    <section id="recipes">
+        <h2>Recipes</h2>
+        <div id="recipe-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
